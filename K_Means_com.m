@@ -1,0 +1,20 @@
+clear all;
+nbins=64;
+
+BG=csvread('compressed/color/train/BG.csv');BG=reshape(BG',100*17120,1);
+CG=csvread('compressed/color/train/CG.csv');CG=reshape(CG',100*17120,1);
+TG=csvread('compressed/color/train/TG.csv');TG=reshape(TG',100*17120,1);
+X_test=cat(2,BG,CG,TG);
+%clear BG;clear CG;clear TG;
+Y_test=kmeans(X_test,nbins);
+Y_test=(Y_test-1)/(nbins-1);
+csvwrite(strcat('output/kmeans_us_',num2str(nbins),'com.csv'),Y_test);
+clear all;
+BG=csvread('compressed/color/test/BG.csv');BG=reshape(BG',100*17120,1);
+CG=csvread('compressed/color/test/CG.csv');CG=reshape(CG',100*17120,1);
+TG=csvread('compressed/color/test/TG.csv');TG=reshape(TG',100*17120,1);
+X_test=cat(2,BG,CG,TG);
+%clear BG;clear CG;clear TG;
+Y_test=kmeans(X_test,nbins);
+Y_test=(Y_test-1)/(nbins-1);
+csvwrite(strcat('output/kmeans_us_',num2str(nbins),'com_test.csv'),Y_test);
