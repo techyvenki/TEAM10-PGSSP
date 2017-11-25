@@ -2,12 +2,11 @@
 
 # Project Title: Learning to Detect Natural Image Boundaries Using Local Brigtness,Color and Texture Cues.
 
-#Team Members:
-Aarathi Ramesh Muppalla : 20173018 
-Mahesh Pathakoti        : 20173022
-Duvvuri Venkatesh       : 20173025
-Krishna Sss Tuttagunta  : 20173026
-
+# Team Members:
+1. Aarathi Ramesh Muppalla : 20173018 
+2. Mahesh Pathakoti        : 20173022
+3. Duvvuri Venkatesh       : 20173025
+4. Krishna Sss Tuttagunta  : 20173026
 
 This work is carried out as part of SMAI course in IIIT-Hyderabad. 
 
@@ -33,24 +32,19 @@ https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/segbench/
 All third party code is provided in folder named third_party
 
 
-| Matlabfile | Description |
+ Matlabfile | Description 
+------------|------------
+Feature_Extraction.m | Extracts features mentioned above and stores in CSV file 
+Data_Visualisation.m | [visualising the dataset and the extracted features for a sigle training image 
+Feature_Extraction_com.m | Extracts features mentioned above, compress the image and stores in CSV file 
+K_means_com.m | K-means clustering using training data
+Linear_Regression.m | Implementation of linear regression
+kmeans_supervised.m | supervised classification using kmeans with Linear Regression
+nb_com.m | Naive Bayes implementation
+svm_com.m | SVM implementation
+rtree_com.m | Classification Tree Implementation
+PR_com.m | Calculation of precision, Recall and F-measure
 
-| ------ | ------ |
-| Feature_Extraction.m | Extracts features mentioned above and stores in CSV file |
-
-| Data_Visualisation.m | [visualising the dataset and the extracted features for a sigle training image |
-
-| Feature_Extraction_com.m | Extracts features mentioned above, compress the image and stores in CSV file |
-
-| K_means_com.m | K-means clustering using training data |
-
-| Linear_Regression.m | Implementation of linear regression |
-
-| kmeans_supervised.m | supervised classification using kmeans with Linear Regression |
-| nb_com.m | Naive Bayes implementation |
-| svm_com.m | SVM implementation |
-| rtree_com.m | Classification Tree Implementation |
-| PR_com.m | Calculation of precision, Recall and F-measure |
 # References
   - http://www.aces.edu/dept/fisheries/education/pond_to_plate/documents/ExplanationoftheLABColorSpace.pdf
   - The Berkeley Segmentation Dataset and Benchmark - https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/
