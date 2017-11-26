@@ -3,10 +3,10 @@
 # Project Title: Learning to Detect Natural Image Boundaries Using Local Brigtness,Color and Texture Cues.
 
 #Team Members:
-Aarathi Ramesh Muppalla : 20173018 
-Mahesh Pathakoti        : 20173022
-Duvvuri Venkatesh       : 20173025
-Krishna Sss Tuttagunta  : 20173026
+Markup* Aarathi Ramesh Muppalla : 20173018 
+* Mahesh Pathakoti        : 20173022
+* Duvvuri Venkatesh       : 20173025
+* Kishna Sss Tuttagunta  : 20173026
 
 
 This work is carried out as part of SMAI course in IIIT-Hyderabad. 
